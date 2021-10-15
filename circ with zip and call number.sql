@@ -9,11 +9,11 @@ SELECT b.language_code AS "LANGUAGE",
   AS "ACTION",
   c.itype_code_num AS "I TYPE", 
   CASE
-    WHEN c.item_agency_code_num = '1' THEN 'Colusa'
-    WHEN c.item_agency_code_num = '2' THEN 'Folsom'
-    WHEN c.item_agency_code_num = '3' THEN 'SPL'
-    WHEN c.item_agency_code_num = '4' THEN 'Sutter'
-    WHEN c.item_agency_code_num = '5' THEN 'Woodland'
+    WHEN c.item_agency_code_num = '1' THEN 'Lib1'
+    WHEN c.item_agency_code_num = '2' THEN 'Lib2'
+    WHEN c.item_agency_code_num = '3' THEN 'Lib3'
+    WHEN c.item_agency_code_num = '4' THEN 'Lib4'
+    WHEN c.item_agency_code_num = '5' THEN 'Lib5'
     ELSE 'unexpected code' || c.item_agency_code_num 
   END
   AS "AGENCY", 
